@@ -28,7 +28,7 @@ export default function Menu() {
   }, []);
 
   return (
-    <div className="max-w-screen-2xl mx-auto px-4 2xl:px-0 py-4 2xl:py-6 flex justify-between items-center relative">
+    <div className="container mx-auto px-4 2xl:px-0 py-4 2xl:py-6 flex justify-between items-center relative">
       <div className="flex gap-2 items-center">
         <div className="w-10 h-10 bg-[#FF6969] rounded-lg"></div>
         <span className={`${font.acme.className} text-3xl`}>Blood Bazar</span>

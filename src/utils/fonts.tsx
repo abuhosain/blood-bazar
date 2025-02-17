@@ -5,7 +5,7 @@ const acme = Acme({
 });
 
 const karla = Karla({
-  weight: ["300", "400", "700", "800"],
+  weight: ["300", "400", "600", "700", "800"],
 });
 
 const font = {
