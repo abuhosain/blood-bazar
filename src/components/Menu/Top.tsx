@@ -9,7 +9,7 @@ const social_media_links = [
 
 export default function Top() {
   return (
-    <div className="py-8 flex justify-between">
+    <div className="max-w-screen-2xl px-4 2xl:px-0 py-5 2xl:py-8 mx-auto flex justify-between">
       <Link
         href={"/"}
         className="text-3xl hover:text-[#ff6969] transition-all duration-300"
@@ -18,9 +18,9 @@ export default function Top() {
       </Link>
 
       <ul className="flex gap-5">
-        {social_media_links.map((link) => (
-          <li key={`social_media_${link.name}`} className="text-3xl">
-            <Link href={"/"}>{link.icon}</Link>
+        {social_media_links.map((page) => (
+          <li key={`social_media_${page.name}`} className="text-3xl">
+            <Link href={"/"}>{page.icon}</Link>
           </li>
         ))}
       </ul>
