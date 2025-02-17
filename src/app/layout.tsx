@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Top from "@/components/Menu/Top";
 
 export const metadata: Metadata = {
   title: "Blood Bazar",
@@ -13,7 +14,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div className="max-w-screen-xl mx-auto">
+          <Top />
+        </div>
+        <div>{children}</div>
+      </body>
     </html>
   );
 }
