@@ -52,7 +52,7 @@ export default function Menu() {
           <FaBars />
         </button>
         <div
-          className={`absolute -top-[70px] right-0 w-2/3 md:w-1/3 min-h-screen bg-[#ff9494] ${
+          className={`fixed top-0 right-0 w-2/3 md:w-1/3 min-h-screen bg-[#ff9494] ${
             show ? "" : "hidden"
           } lg:hidden`}
         >
