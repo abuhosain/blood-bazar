@@ -15,8 +15,8 @@ export default function Form_Switcher() {
   };
 
   return (
-    <div className="w-[1024px] bg-white rounded-lg p-4">
-      <div className="flex justify-between mb-5">
+    <div className="w-[340px] md:w-[650px] lg:w-[990px] bg-white rounded-lg p-4">
+      <div className="flex justify-between items-center mb-5">
         <div>
           <h1 className={`${font.acme.className} text-2xl md:text-4xl`}>
             Register as a {form ? "Donor" : "Blood Bank"}

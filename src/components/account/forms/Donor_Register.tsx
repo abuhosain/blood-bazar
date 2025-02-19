@@ -35,6 +35,7 @@ export default function Donor_Register() {
         <div>
           <h3 className="font-semibold uppercase">Phone Number</h3>
           <input
+            type="number"
             className="py-2 px-3 border-2 rounded-lg mt-2 w-full"
             placeholder="Enter number here"
           />
@@ -73,7 +74,7 @@ export default function Donor_Register() {
         <Button
           btn_primary={true}
           text="Register Now"
-          styles="uppercase text-white w-full"
+          styles="uppercase text-white w-full hover:text-black hover:bg-transparent hover:border-black border"
         />
       </div>
     </form>

@@ -5,6 +5,7 @@ export default function Form() {
       <div>
         <h3 className="font-semibold uppercase">Full Name</h3>
         <input
+          type="text"
           className="py-2 px-3 border-2 rounded-lg mt-2 w-full"
           placeholder="Enter name here"
         />
@@ -14,6 +15,7 @@ export default function Form() {
       <div>
         <h3 className="font-semibold uppercase">Enter Email</h3>
         <input
+          type="email"
           className="py-2 px-3 border-2 rounded-lg mt-2 w-full"
           placeholder="Enter email here"
         />
@@ -41,6 +43,7 @@ export default function Form() {
       <div>
         <h3 className="font-semibold uppercase">Address</h3>
         <input
+          type="text"
           className="py-2 px-3 border-2 rounded-lg mt-2 w-full"
           placeholder="Enter address here"
         />
