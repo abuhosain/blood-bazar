@@ -59,11 +59,13 @@ export default function Missions() {
                 <p className="text-xl text-justify my-4">
                   {mission.description}
                 </p>
-                <Button
-                  btn_primary={true}
-                  text="Learn More"
-                  styles="text-black border border-[#ff6363] hover:text-black hover:border-black hover:bg-transparent"
-                />
+                <div className="flex justify-end">
+                  <Button
+                    btn_primary={false}
+                    text="Learn More"
+                    styles="text-black border border-black hover:bg-[#ff6969] hover:border-[#ff6969] hover:text-white"
+                  />
+                </div>
               </div>
             ))}
           </div>
