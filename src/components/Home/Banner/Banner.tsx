@@ -30,7 +30,7 @@ export default function Banner() {
                 styles="uppercase text-white border border-[#ff6363] hover:border-white hover:bg-transparent"
               />
             </Link>
-            <Link href={"/"}>
+            <Link href={"/account/sign-up"}>
               <Button
                 text="Sign Up"
                 btn_primary={false}
