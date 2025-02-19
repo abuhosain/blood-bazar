@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { FaSearch, FaFacebook, FaYoutube, FaInstagram } from "react-icons/fa";
 
 const social_media_links = [
@@ -8,7 +11,9 @@ const social_media_links = [
 ];
 
 export default function Top() {
-  return (
+  const path = usePathname();
+
+  return path === "/" ? (
     <div className="container px-4 2xl:px-0 py-5 2xl:py-8 mx-auto flex justify-between">
       <Link
         href={"/search"}
@@ -28,5 +33,7 @@ export default function Top() {
         ))}
       </ul>
     </div>
+  ) : (
+    ""
   );
 }
