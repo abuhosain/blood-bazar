@@ -24,10 +24,18 @@ export default function Banner() {
 
           <div className="mt-10 flex gap-5 items-center">
             <Link href={"/"}>
-              <Button text="Donate Now" btn_primary={true} />
+              <Button
+                text="Donate Now"
+                btn_primary={true}
+                styles="uppercase text-white border border-[#ff6363] hover:border-white hover:bg-transparent"
+              />
             </Link>
             <Link href={"/"}>
-              <Button text="Sign Up" btn_primary={false} />
+              <Button
+                text="Sign Up"
+                btn_primary={false}
+                styles="uppercase text-white border hover:border-[#ff6969] hover:bg-[#ff6969]"
+              />
             </Link>
           </div>
         </div>
