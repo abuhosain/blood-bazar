@@ -5,10 +5,10 @@
   background-position: left;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 766px) {
   .about-bg {
     padding-top: 30px;
     background-size: cover;
-    background-position: left;
+    background-position: center;
   }
 }

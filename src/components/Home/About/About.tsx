@@ -16,11 +16,11 @@ export default function About() {
 
           <div>
             <h2
-              className={`${font.acme.className} text-6xl mt-3 text-white md:text-black`}
+              className={`${font.acme.className} text-5xl mt-3 text-white md:text-black`}
             >
               Who We Are
             </h2>
-            <div className="w-24 h-2 bg-[#ff6363] rounded-lg ml-1"></div>
+            <div className="w-24 h-2 bg-[#ff6363] rounded-lg ml-1 mt-1"></div>
           </div>
 
           <div className="my-10 text-white md:text-black">
