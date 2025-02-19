@@ -11,7 +11,7 @@ export default function Top() {
   return (
     <div className="container px-4 2xl:px-0 py-5 2xl:py-8 mx-auto flex justify-between">
       <Link
-        href={"/"}
+        href={"/search"}
         className="text-3xl hover:text-[#ff6969] transition-all duration-300 flex items-center gap-3"
       >
         <FaSearch />

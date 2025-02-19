@@ -6,7 +6,7 @@ import "./banner.css";
 export default function Banner() {
   return (
     <div
-      className={`banner h-[730px] flex items-center ${font.karla.className}`}
+      className={`banner h-[740px] flex items-center ${font.karla.className}`}
     >
       <div className="container mx-auto">
         <div className="p-4 2xl:p-0">
