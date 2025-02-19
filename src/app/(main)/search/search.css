@@ -1,0 +1,7 @@
+.search-main-bg {
+  background: linear-gradient(#ff696977, #ff69698b),
+    url("../../../../public/search-page-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
