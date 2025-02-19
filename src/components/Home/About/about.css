@@ -1,14 +1,14 @@
 .about-bg {
   background: url("../../../../public/about.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 50%;
   background-position: left;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 740px) {
   .about-bg {
     padding-top: 30px;
     background-size: cover;
-    background-position: center;
+    background-position: left;
   }
 }

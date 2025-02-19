@@ -7,8 +7,8 @@ export default function Button({
     <button
       className={`${
         btn_primary
-          ? "bg-[#ff6969] text-white px-6 py-3 text-xl md:text-2xl rounded-lg border border-[#ff6969] hover:border-white hover:bg-transparent transition-all duration-300"
-          : "text-white px-6 py-3 text-xl md:text-2xl rounded-lg border hover:border-white transition-all duration-300 hover:bg-[#ff6363]"
+          ? "bg-[#ff6969] px-6 py-3 text-xl md:text-2xl rounded-lg transition-all duration-300"
+          : "px-6 py-3 text-xl md:text-2xl rounded-lg transition-all duration-300"
       } ${styles}`}
     >
       {text}
