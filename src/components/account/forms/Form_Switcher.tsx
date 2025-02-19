@@ -8,7 +8,7 @@ import Blood_Bank_Register from "./Blood_Bank_Register";
 import Link from "next/link";
 
 export default function Form_Switcher() {
-  const [form, setForm] = useState(false);
+  const [form, setForm] = useState(true);
 
   const handle_switch_register_form = () => {
     setForm(!form);
@@ -18,8 +18,8 @@ export default function Form_Switcher() {
     <div className="w-[1024px] bg-white rounded-lg p-4">
       <div className="flex justify-between mb-5">
         <div>
-          <h1 className={`${font.acme.className} text-4xl`}>
-            Register As A Donor
+          <h1 className={`${font.acme.className} text-2xl md:text-4xl`}>
+            Register as a {form ? "Donor" : "Blood Bank"}
           </h1>
           <div className="w-24 h-2 bg-[#ff6363] rounded-lg ml-1 mt-1"></div>
         </div>

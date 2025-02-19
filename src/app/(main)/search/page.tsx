@@ -92,10 +92,11 @@ export default function SearchPage() {
                 <h3 className="text-xl font-bold mb-2">Select Blood Group </h3>
                 <select className="w-full py-1 px-3 rounded-lg">
                   <option>A+</option>
-                  <option>AB+</option>
-                  <option>AB-</option>
+                  <option>A-</option>
                   <option>B+</option>
                   <option>B-</option>
+                  <option>AB+</option>
+                  <option>AB-</option>
                   <option>O+</option>
                   <option>O-</option>
                 </select>

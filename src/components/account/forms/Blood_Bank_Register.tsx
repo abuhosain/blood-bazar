@@ -1,3 +1,9 @@
+import Form from "@/components/common/Form";
+
 export default function Blood_Bank_Register() {
-  return <div>Blood Bank Register</div>;
+  return (
+    <form>
+      <Form />
+    </form>
+  );
 }
