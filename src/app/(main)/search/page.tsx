@@ -1,17 +1,71 @@
 import font from "@/utils/fonts";
 import "./search.css";
 import Button from "@/components/common/Button";
+import Results from "@/components/Search/Results";
+
+const search_data = [
+  {
+    id: 0,
+    name: "Rakibul Hasan",
+    img: "https://i.ibb.co.com/7KFKNTF/team-2.jpg",
+    blood_group: "A+",
+  },
+  {
+    id: 1,
+    name: "Rakibul Hasan",
+    img: "https://i.ibb.co.com/7KFKNTF/team-2.jpg",
+    blood_group: "A+",
+  },
+  {
+    id: 2,
+    name: "Rakibul Hasan",
+    img: "https://i.ibb.co.com/7KFKNTF/team-2.jpg",
+    blood_group: "A+",
+  },
+  {
+    id: 3,
+    name: "Rakibul Hasan",
+    img: "https://i.ibb.co.com/7KFKNTF/team-2.jpg",
+    blood_group: "A+",
+  },
+  {
+    id: 4,
+    name: "Rakibul Hasan",
+    img: "https://i.ibb.co.com/7KFKNTF/team-2.jpg",
+    blood_group: "A+",
+  },
+  {
+    id: 5,
+    name: "Rakibul Hasan",
+    img: "https://i.ibb.co.com/7KFKNTF/team-2.jpg",
+    blood_group: "A+",
+  },
+  {
+    id: 6,
+    name: "Rakibul Hasan",
+    img: "https://i.ibb.co.com/7KFKNTF/team-2.jpg",
+    blood_group: "A+",
+  },
+  {
+    id: 7,
+    name: "Rakibul Hasan",
+    img: "https://i.ibb.co.com/7KFKNTF/team-2.jpg",
+    blood_group: "A+",
+  },
+];
 
 export default function SearchPage() {
   return (
-    <div className="search-main-bg min-h-[calc(100vh-88px)] flex items-center">
-      <div className="min-w-[1024px] mx-auto">
-        <div className={font.karla.className}>
+    <div className="search-main-bg min-h-[calc(100vh-88px)] flex items-center py-10">
+      <div className="md:min-w-[750px] lg:min-w-[1024px] mx-auto px-4 xl:px-0">
+        <div className={`${font.karla.className} bg-[#ffffffa3] rounded-lg`}>
           <div className="py-7 px-4 bg-[#ff6969] rounded-t-lg">
-            <h1 className={`${font.acme.className} text-5xl`}>Search Blood</h1>
+            <h1 className={`${font.acme.className} text-5xl text-white`}>
+              Search Blood
+            </h1>
           </div>
-          <form className="bg-[#ffffffa3] p-4 rounded-b-lg">
-            <div className="grid grid-cols-2 gap-10">
+          <form className="p-4">
+            <div className="grid md:grid-cols-2 gap-10">
               {/* blood source selection */}
               <div>
                 <h3 className="text-2xl font-bold mb-2">Search From </h3>
@@ -76,6 +130,15 @@ export default function SearchPage() {
               />
             </div>
           </form>
+
+          {/* search results */}
+          {search_data ? (
+            <div className="px-4 pb-4">
+              <Results data={search_data} />
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>
