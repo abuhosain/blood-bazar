@@ -1,4 +1,32 @@
+import districts from "@/utils/districts";
+import React, { useEffect, useState } from "react";
+
 export default function Form() {
+  const [district, setDistrict] = useState("SELECT");
+  const [thanas, setThanas] = useState<string[] | undefined>([]);
+
+  //find selected district
+  const handle_district_select = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    if (e.target.value == "SELECT") {
+      setDistrict("null");
+      return;
+    }
+    setDistrict(e.target.value);
+  };
+
+  //set thanas based on selected district
+  const handle_district_thanas = (selected_district: string) => {
+    const thanas = districts.find(
+      (dis) => dis.name == selected_district
+    )?.thanas;
+
+    setThanas(thanas);
+  };
+
+  useEffect(() => {
+    handle_district_thanas(district);
+  }, [district]);
+
   return (
     <div className="grid md:grid-cols-2 gap-6 md:gap-4">
       {/* name form */}
@@ -23,19 +51,27 @@ export default function Form() {
       {/* Zila and Upazila */}
       <div className="flex justify-between gap-4">
         <div className="w-full">
-          <h3 className="font-semibold uppercase">Zila</h3>
-          <select className="py-2 w-full rounded-lg mt-[10px] border-2">
-            <option>Bogura</option>
-            <option>Rangopur</option>
-            <option>Dhaka</option>
+          <h3 className="font-semibold uppercase">District</h3>
+          <select
+            onChange={handle_district_select}
+            defaultValue={"SELECT"}
+            className="py-2 w-full rounded-lg mt-[10px] border-2"
+          >
+            <option>SELECT</option>
+            {districts.map((dis) => (
+              <option key={dis.name} className="uppercase">
+                {dis.name}
+              </option>
+            ))}
           </select>
         </div>
         <div className="w-full">
           <h3 className="font-semibold uppercase">Upazila</h3>
           <select className="py-2 w-full rounded-lg mt-[10px] border-2">
-            <option>Bogura</option>
-            <option>Rangopur</option>
-            <option>Dhaka</option>
+            <option>SELECT</option>
+            {thanas?.map((thana) => (
+              <option key={thana}>{thana}</option>
+            ))}
           </select>
         </div>
       </div>
