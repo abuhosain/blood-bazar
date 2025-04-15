@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Top from "@/components/Menu/Top";
 import Menu from "@/components/Menu/Menu";
 
 export const metadata: Metadata = {
@@ -14,7 +13,6 @@ export default function RootLayout({
 }>) {
   return (
     <div>
-      <Top />
       <div className="bg-[#F3F3F3]">
         <Menu />
       </div>
