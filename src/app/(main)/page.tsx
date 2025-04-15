@@ -6,7 +6,7 @@ import Reviews from "@/components/Home/Reviews/Reviews";
 
 export default function Home() {
   return (
-    <div className="space-y-[150px]">
+    <div className="space-y-[80px] lg:space-y-[120px]">
       <Banner />
       <div className="container mx-auto">
         <Overview />
