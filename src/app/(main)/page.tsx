@@ -1,5 +1,5 @@
 import Overview from "@/components/common/overview/Overview";
-import About from "@/components/Home/About/About";
+import About from "@/components/common/About/About";
 import Banner from "@/components/Home/Banner/Banner";
 import Missions from "@/components/Home/Missions/Missions";
 import Reviews from "@/components/Home/Reviews/Reviews";
