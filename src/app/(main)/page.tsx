@@ -2,6 +2,7 @@ import Overview from "@/components/common/overview/Overview";
 import About from "@/components/Home/About/About";
 import Banner from "@/components/Home/Banner/Banner";
 import Missions from "@/components/Home/Missions/Missions";
+import Reviews from "@/components/Home/Reviews/Reviews";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       </div>
       <About />
       <Missions />
+      <Reviews />
       <div></div>
     </div>
   );
