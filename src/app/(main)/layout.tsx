@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import Menu from "@/components/Menu/Menu";
+import Menu from "@/components/common/Menu/Menu";
+import Footer from "@/components/common/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Blood Bazar | Home Page",
@@ -17,6 +18,7 @@ export default function RootLayout({
         <Menu />
       </div>
       <div>{children}</div>
+      <Footer />
     </div>
   );
 }

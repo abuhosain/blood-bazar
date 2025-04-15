@@ -1,0 +1,7 @@
+.about-page-bg {
+  background: linear-gradient(#00000058, #0000006e),
+    url("../../../../public/about.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

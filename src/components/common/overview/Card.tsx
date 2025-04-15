@@ -12,7 +12,7 @@ export default function Card({
   title: string;
 }) {
   return (
-    <div className="rounded-lg px-6 flex flex-col justify-center items-center gap-4">
+    <div className="rounded-lg p-6 flex flex-col justify-center items-center gap-4 bg-white">
       <Image
         className="w-[50px] h-[50px]"
         src={image}
